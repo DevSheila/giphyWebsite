@@ -17,6 +17,10 @@ export class DataService {
         this.gifs.next(response.data)
       })
   }
+  
+  getGifs(){
+    return this.gifs.asObservable()
+  }
 
   
 }
