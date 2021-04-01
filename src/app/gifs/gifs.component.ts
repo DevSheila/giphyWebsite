@@ -17,7 +17,13 @@ export class GifsComponent implements OnInit,OnDestroy {
 
   constructor(private dataService : DataService) { }
 
-  
+  seeMore(){
+    this.dataService.getMoreTrendingGifs()
+    this.subscription  = this.dataService.getGifs().subscribe((response:any)=>{
+      this.gifs = response;
+    })
+  }
+
   ngOnInit():void{
 
     this.dataService.getTrendingGifs()
