@@ -1,11 +1,10 @@
 <hr>
-<div class="gifs container m-5">
+<div class="container">
 <h1>Gif Categories</h1>
     <div class="row">
-        <div class="x "  id="gifImage" *ngFor= "let gif of gifCategories">
+        <div class="col-lg-3 mt-2 mb-2"  id="gifImage" *ngFor= "let gif of gifCategories">
             <img  [src]="gif.images.downsized.url"  class ="img-fluid" alt="Gif image">
-            <p>{{gif.images}} whoo</p>
-            <p>whoo</p>
+            <p>{{gif.images}}</p>
             
         </div>
     </div>

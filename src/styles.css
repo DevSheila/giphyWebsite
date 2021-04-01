@@ -1,2 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
 @import url('https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css');
+body{
+    background-image: url('./assets/daniele-colucci-8MoRs-DVtas-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    /* background-color: black; */
+    color: white;
+  }
+  

@@ -13,7 +13,7 @@ export class DataService {
    
   }
   getTrendingGifs(){
-      return this.http.get(`https://api.giphy.com/v1/gifs/trending?api_key=${environment.giphyApiKey}&limit=10`).subscribe((response:any)=>{
+      return this.http.get(`https://api.giphy.com/v1/gifs/trending?api_key=${environment.giphyApiKey}&limit=12`).subscribe((response:any)=>{
         this.gifs.next(response.data)
       })
   }
@@ -24,7 +24,7 @@ export class DataService {
     })
   }
   getCategoriesGifs(){
-    return this.http.get(`https://api.giphy.com/v1/gifs/categories?api_key=${environment.giphyApiKey}&limit=10`);
+    return this.http.get(`https://api.giphy.com/v1/gifs/categories?api_key=${environment.giphyApiKey}&limit=12`);
   }
 
   searchGifs(gifName:string){
