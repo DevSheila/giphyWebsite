@@ -17,9 +17,14 @@ export class DataService {
         this.gifs.next(response.data)
       })
   }
-  
-  getGifs(){
-    return this.gifs.asObservable()
+
+  getMoreTrendingGifs(){
+    return this.http.get(`https://api.giphy.com/v1/gifs/trending?api_key=${environment.giphyApiKey}&limit=100`).subscribe((response:any)=>{
+      this.gifs.next(response.data)
+    })
+  }
+  getCategoriesGifs(){
+    return this.http.get(`https://api.giphy.com/v1/gifs/categories?api_key=${environment.giphyApiKey}&limit=10`);
   }
 
   searchGifs(gifName:string){
@@ -29,5 +34,11 @@ export class DataService {
 
   }
 
-  
+  getGifs(){
+    return this.gifs.asObservable()
+  }
+
+  // getCatGifs(){
+  //   return this.gifs.asObservable()
+  // }
 }
