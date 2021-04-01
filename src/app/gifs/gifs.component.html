@@ -1,0 +1,13 @@
+
+<div class="gifs container-fluid m-5">
+    <div class="row">
+        <div class="x "  id="gifImage" *ngFor= "let gif of gifs">
+
+            <img  [src]="gif.images.downsized.url"  class ="img-fluid" alt="Gif image">
+            
+        </div>
+    </div>
+
+    <button class="btn btn-primary m-2"  (click)="seeMore()" >See More</button>
+    <button class="btn btn-danger m-2" >See Less</button>
+</div>
