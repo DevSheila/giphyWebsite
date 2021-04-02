@@ -6,7 +6,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SearchComponent } from './search/search.component';
 import { GifsComponent } from './gifs/gifs.component';
-import { RandomGifComponent } from './random-gif/random-gif.component';
 import { GifCategoriesComponent } from './gif-categories/gif-categories.component';
 import { NavbarComponent } from './navbar/navbar.component';
 
@@ -17,7 +16,6 @@ import { NavbarComponent } from './navbar/navbar.component';
     SearchComponent,
     GifsComponent,
     GifCategoriesComponent,
-    RandomGifComponent,
     NavbarComponent
   ],
   imports: [
