@@ -17,6 +17,7 @@ export class SearchComponent implements OnInit {
     // const event = searchTerm.value
     if(searchTerm !== ''){
       this.dataService.searchGifs(searchTerm);
+      console.log(searchTerm)
     }
   }
 

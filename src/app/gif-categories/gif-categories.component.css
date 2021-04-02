@@ -1,0 +1,19 @@
+a{
+    /* background: -webkit-linear-gradient(
+        #c31432
+        #240b36);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
+
+    text-transform: uppercase;
+    font-weight: 900;
+    color: white;
+    /* font-weight: bolder; */
+  
+}
+a:hover{
+    text-decoration: none;
+    font-weight: bolder;
+    margin-bottom: -1px;
+    border-bottom:1px solid #fff;
+}

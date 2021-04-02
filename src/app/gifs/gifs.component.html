@@ -1,14 +1,18 @@
+
+<!-- <app-gif-categories></app-gif-categories> -->
+
+<div class="container  ">
 <hr>
-<div class="container ">
-    <h1>Trending Gifs</h1>
+
+    <h1>TRENDING GIFS</h1>
     <div class="row">
         <div class="col-lg-3 mt-2 mb-2"  id="gifImage" *ngFor= "let gif of gifs">
 
-            <img  [src]="gif.images.downsized.url"  class ="img-fluid" alt="Gif image">
+            <img  [src]="gif.images.downsized.url"  class ="img-fluid gif" alt="Gif image">
             
         </div>
     </div>
 
     <button class="btn btn-primary m-2"  (click)="seeMore()" >See More</button>
-    <button class="btn btn-danger m-2" >See Less</button>
 </div>
+

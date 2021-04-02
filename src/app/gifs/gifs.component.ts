@@ -29,6 +29,7 @@ export class GifsComponent implements OnInit,OnDestroy {
     this.dataService.getTrendingGifs()
     this.subscription  = this.dataService.getGifs().subscribe((response:any)=>{
       this.gifs = response;
+      console.log(response)
     })
 
    

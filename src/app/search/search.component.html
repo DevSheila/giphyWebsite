@@ -1,4 +1,13 @@
+<app-navbar></app-navbar>
+
 <div class="search">
-  <h4>GIPHY WEBSITE</h4>
+  
   <input type="text" placeholder="Search for GIF..." #gif (keyup.enter)="search(gif.value)">
+ 
 </div>
+<router-outlet></router-outlet>
+
+<app-gifs></app-gifs>
+
+
+

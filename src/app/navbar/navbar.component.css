@@ -1,0 +1,39 @@
+
+.navbar-brand ,.navbar-nav a{
+   
+    color:#fff;
+    margin:0 20px; 
+    margin-top:30px;
+   
+}
+.nav-item a{
+    font-size: 1.5rem;
+}
+
+.navbar-toggler{
+    color:#fff;
+    border:none!important;
+    outline:none!important;
+
+}
+.navbar-brand:hover{
+    color: black;
+    
+    margin-bottom: -1px;
+}
+
+.navbar-toggler .fa{
+    color:#fff;
+    font-size:26px;
+}
+
+.nav-link:hover{
+    font-weight: 600;
+    border-bottom:1px solid #fff;
+    margin-bottom: -1px;
+
+}
+
+
+
+

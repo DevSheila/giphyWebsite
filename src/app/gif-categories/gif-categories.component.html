@@ -1,11 +1,27 @@
-<hr>
+<router-outlet></router-outlet>
 <div class="container">
-<h1>Gif Categories</h1>
+<hr>
+<h1>GIF CATEGORIES</h1>
     <div class="row">
-        <div class="col-lg-3 mt-2 mb-2"  id="gifImage" *ngFor= "let gif of gifCategories">
-            <img  [src]="gif.images.downsized.url"  class ="img-fluid" alt="Gif image">
-            <p>{{gif.images}}</p>
+        <div class="col-lg-3 col-md-3 mt-2 mb-2"  id="gifImage" *ngFor= "let gif of gifs">
+            <a routerLink="/categories" (click)="category(gif.name)">{{gif.name}} </a>
+        </div>
+
+    </div>
+</div>
+
+
+
+<div class="container  " *ngIf="showInfo">
+  
+    <div class="row">
+        <div class="col-lg-3 mt-2 mb-2" id="gifImage" *ngFor= "let gifimage of gifsImage">
+               
+            <img  [src]="gifimage.images.downsized.url"  class ="img-fluid gif" alt="Gif image">
             
         </div>
     </div>
+
 </div>
+
+
