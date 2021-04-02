@@ -8,6 +8,7 @@ import { SearchComponent } from './search/search.component';
 import { GifsComponent } from './gifs/gifs.component';
 import { GifCategoriesComponent } from './gif-categories/gif-categories.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import { NavbarComponent } from './navbar/navbar.component';
     SearchComponent,
     GifsComponent,
     GifCategoriesComponent,
-    NavbarComponent
+    NavbarComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
